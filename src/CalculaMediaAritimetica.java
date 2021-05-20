@@ -12,11 +12,11 @@ public class CalculaMediaAritimetica {
         double segundoNumero = scanner.nextDouble();
 
 
-        // *** PROCESSAMENTO ***
+        /* *** PROCESSAMENTO *** */
         double resultado = (primeiroNumero + segundoNumero) / 2;
 
         // *** SAIDA DE DADOS ***
-        System.out.println("O resultado e " +  resultado);
+        System.out.println(resultado);
 
     }
 }

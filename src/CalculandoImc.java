@@ -18,8 +18,8 @@ public class CalculandoImc {
         double resultado = peso / (altura * altura);
 
         // ***SAIDA DE DADOS ***
-
         System.out.println(resultado);
+
 
         scanner.close();
 

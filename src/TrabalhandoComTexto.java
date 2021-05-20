@@ -1,8 +1,13 @@
+import java.util.Locale;
 import java.util.Scanner;
+
+// ***https://docs.oracle.com/javase/tutorial/java/data/numberformat.html ***
 
 public class TrabalhandoComTexto {
 
     public static void main(String[] args){
+
+        Locale.setDefault(Locale.US);
 
         /* Criar mensagem que solicita ao usuario o nome e a idade*/
 
@@ -17,16 +22,14 @@ public class TrabalhandoComTexto {
         System.out.println("Digite sua altura");
         double altura = scanner.nextDouble();
 
-        System.out.println("Digite seu peso");
-        double peso = scanner.nextDouble();
-        
+
         // *** PROCESSAMENTO ***
         
-        String valoresConcatenados = "Oi, meu nome é " + nome + ", tenho " + idade + ", minha altura é" + altura + " e estou pesando " + peso;
-        
-        // SAIDA DE DADOS
-        System.out.println(valoresConcatenados);
-        
+       System.out.printf("o meu nome é %s e tenho %d anos, minha altura é %.2f", nome, idade, altura);
+
+
+
+
         scanner.close();
 
     }
